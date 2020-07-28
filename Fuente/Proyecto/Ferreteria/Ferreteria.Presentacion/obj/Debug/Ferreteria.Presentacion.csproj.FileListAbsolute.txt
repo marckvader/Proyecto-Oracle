@@ -50,3 +50,5 @@ E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presenta
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\bin\Debug\BarcodeStandard.dll
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\bin\Debug\System.Drawing.Common.dll
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMCategoria.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMArticulos.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMLogin.resources

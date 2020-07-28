@@ -67,6 +67,12 @@
     <Compile Include="FRMCategoria.Designer.cs">
       <DependentUpon>FRMCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FRMLogin.Designer.cs">
+      <DependentUpon>FRMLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,41 @@
     <Compile Include="FRMProvincias.Designer.cs">
       <DependentUpon>FRMProvincias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMTiposCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMTiposCambio.Designer.cs">
+      <DependentUpon>FRMTiposCambio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMTipo_Cia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMTipo_Cia.Designer.cs">
       <DependentUpon>FRMTipo_Cia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Bodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Bodegas.Designer.cs">
+      <DependentUpon>FRM_Bodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Cliente_Provedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Cliente_Provedores.Designer.cs">
+      <DependentUpon>FRM_Cliente_Provedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Devoluciones.Designer.cs">
+      <DependentUpon>FRM_Devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Ventas.Designer.cs">
+      <DependentUpon>FRM_Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoria.resx">
       <DependentUpon>FRMCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLogin.resx">
+      <DependentUpon>FRMLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPrincipal.resx">
       <DependentUpon>FRMPrincipal.cs</DependentUpon>
@@ -135,6 +174,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Ferreteria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
