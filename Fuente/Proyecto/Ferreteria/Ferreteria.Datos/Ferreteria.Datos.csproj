@@ -50,6 +50,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="DCategoria.cs" />
     <Compile Include="DInventario_Articulos.cs" />
+    <Compile Include="DMonedas.cs" />
     <Compile Include="DProvincias.cs" />
     <Compile Include="DTipoCia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -52,3 +52,7 @@ C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreter
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMCategoria.resources
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMArticulos.resources
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMLogin.resources
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMArticulos.resources
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMLogin.resources
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMTiposCambio.resources
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Def_Monedas.resources

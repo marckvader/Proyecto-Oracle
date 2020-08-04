@@ -109,6 +109,12 @@
     <Compile Include="FRM_Cliente_Provedores.Designer.cs">
       <DependentUpon>FRM_Cliente_Provedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_Def_Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Def_Monedas.Designer.cs">
+      <DependentUpon>FRM_Def_Monedas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_Devoluciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,8 +145,14 @@
     <EmbeddedResource Include="FRMProvincias.resx">
       <DependentUpon>FRMProvincias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMTiposCambio.resx">
+      <DependentUpon>FRMTiposCambio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMTipo_Cia.resx">
       <DependentUpon>FRMTipo_Cia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Def_Monedas.resx">
+      <DependentUpon>FRM_Def_Monedas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -90,5 +90,12 @@ namespace Ferreteria.Presentacion
         {
 
         }
+
+        private void monedasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_Def_Monedas frm = new FRM_Def_Monedas();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
