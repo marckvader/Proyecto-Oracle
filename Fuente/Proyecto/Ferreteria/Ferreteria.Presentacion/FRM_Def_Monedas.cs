@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms;
 using Ferreteria.Negocio;
 
 namespace Ferreteria.Presentacion
 {
     public partial class FRM_Def_Monedas : Form
     {
+        private string NombreAnt2;
         public FRM_Def_Monedas()
         {
             InitializeComponent();
@@ -149,6 +149,58 @@ namespace Ferreteria.Presentacion
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void BTNActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string Rpta = "";
+                if (TXTSeries.Text == string.Empty || TXTDescripcion.Text == string.Empty)
+                {
+                    this.MensajeError("El estacio esta en blanco, por favor ingrese un dato valido, el campo sera remarcado");
+                    ErrorIcono.SetError(TXTSeries, "Ingrese el valor");
+                    ErrorIcono.SetError(TXTDescripcion, "Ingrese el valor");
+                }
+                else
+                {
+                    Rpta = NMonedas.Actualizar(Convert.ToInt32(TXTIdMoneda.Text), this.NombreAnt2, TXTSeries.Text.Trim(), TXTDescripcion.Text.Trim());
+                    if (Rpta.Equals("OK"))
+                    {
+                        this.MensajeOK("Se actualizó de forma correcta el registro");
+                        this.Limpiar();
+                        this.Listar();
+                    }
+                    else
+                    {
+                        this.MensajeError(Rpta);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void DGVListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                this.Limpiar();
+                BTNNuevo.Enabled = false;
+                BTNActualizar.Enabled = true;
+                BTNGuardar.Visible = false;
+                TXTIdMoneda.Text = Convert.ToString(DGVListado.CurrentRow.Cells["ID_MONEDA"].Value);
+                NombreAnt2 = Convert.ToString(DGVListado.CurrentRow.Cells["COD_MONEDA"].Value);
+                TXTSeries.Text = Convert.ToString(DGVListado.CurrentRow.Cells["COD_MONEDA"].Value);
+                TXTDescripcion.Text = Convert.ToString(DGVListado.CurrentRow.Cells["DESCRIPCION"].Value);
+                TabGeneral.SelectedIndex = 1;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Selecione desde la celda SIGLA", "SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

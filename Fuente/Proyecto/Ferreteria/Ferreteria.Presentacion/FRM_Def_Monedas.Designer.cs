@@ -122,6 +122,7 @@
             this.DGVListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVListado.Size = new System.Drawing.Size(581, 188);
             this.DGVListado.TabIndex = 0;
+            this.DGVListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellDoubleClick);
             // 
             // Seleccionar
             // 
@@ -247,6 +248,7 @@
             this.BTNActualizar.TabIndex = 2;
             this.BTNActualizar.Text = "Actualizar";
             this.BTNActualizar.UseVisualStyleBackColor = true;
+            this.BTNActualizar.Click += new System.EventHandler(this.BTNActualizar_Click);
             // 
             // BTNGuardar
             // 
@@ -307,7 +309,7 @@
             this.Controls.Add(this.BTNSalir);
             this.Name = "FRM_Def_Monedas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_Def_Monedas";
+            this.Text = "Registro de Monedas";
             this.Load += new System.EventHandler(this.FRM_Def_Monedas_Load);
             this.TabGeneral.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
