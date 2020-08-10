@@ -32,6 +32,8 @@
             this.TabGeneral = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.GBMonedas = new System.Windows.Forms.GroupBox();
+            this.BTNDesactivar = new System.Windows.Forms.Button();
+            this.BTNActivar = new System.Windows.Forms.Button();
             this.CHKSeleccionar = new System.Windows.Forms.CheckBox();
             this.DGVListado = new System.Windows.Forms.DataGridView();
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -84,6 +86,8 @@
             // 
             // GBMonedas
             // 
+            this.GBMonedas.Controls.Add(this.BTNDesactivar);
+            this.GBMonedas.Controls.Add(this.BTNActivar);
             this.GBMonedas.Controls.Add(this.CHKSeleccionar);
             this.GBMonedas.Controls.Add(this.DGVListado);
             this.GBMonedas.Controls.Add(this.BTNEliminar);
@@ -98,6 +102,24 @@
             this.GBMonedas.TabStop = false;
             this.GBMonedas.Text = "Consulta de Monedas";
             // 
+            // BTNDesactivar
+            // 
+            this.BTNDesactivar.Location = new System.Drawing.Point(87, 296);
+            this.BTNDesactivar.Name = "BTNDesactivar";
+            this.BTNDesactivar.Size = new System.Drawing.Size(75, 23);
+            this.BTNDesactivar.TabIndex = 15;
+            this.BTNDesactivar.Text = "Desactivar";
+            this.BTNDesactivar.UseVisualStyleBackColor = true;
+            // 
+            // BTNActivar
+            // 
+            this.BTNActivar.Location = new System.Drawing.Point(6, 296);
+            this.BTNActivar.Name = "BTNActivar";
+            this.BTNActivar.Size = new System.Drawing.Size(75, 23);
+            this.BTNActivar.TabIndex = 14;
+            this.BTNActivar.Text = "Activar";
+            this.BTNActivar.UseVisualStyleBackColor = true;
+            // 
             // CHKSeleccionar
             // 
             this.CHKSeleccionar.AutoSize = true;
@@ -107,6 +129,7 @@
             this.CHKSeleccionar.TabIndex = 12;
             this.CHKSeleccionar.Text = "Seleccionar";
             this.CHKSeleccionar.UseVisualStyleBackColor = true;
+            this.CHKSeleccionar.CheckedChanged += new System.EventHandler(this.CHKSeleccionar_CheckedChanged);
             // 
             // DGVListado
             // 
@@ -122,6 +145,7 @@
             this.DGVListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGVListado.Size = new System.Drawing.Size(581, 188);
             this.DGVListado.TabIndex = 0;
+            this.DGVListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellContentClick);
             this.DGVListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellDoubleClick);
             // 
             // Seleccionar
@@ -134,12 +158,13 @@
             // 
             // BTNEliminar
             // 
-            this.BTNEliminar.Location = new System.Drawing.Point(512, 272);
+            this.BTNEliminar.Location = new System.Drawing.Point(168, 296);
             this.BTNEliminar.Name = "BTNEliminar";
             this.BTNEliminar.Size = new System.Drawing.Size(75, 23);
             this.BTNEliminar.TabIndex = 4;
             this.BTNEliminar.Text = "Eliminar";
             this.BTNEliminar.UseVisualStyleBackColor = true;
+            this.BTNEliminar.Click += new System.EventHandler(this.BTNEliminar_Click);
             // 
             // BTNListar
             // 
@@ -172,7 +197,7 @@
             // 
             this.LblTotal.AutoSize = true;
             this.LblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTotal.Location = new System.Drawing.Point(450, 309);
+            this.LblTotal.Location = new System.Drawing.Point(452, 301);
             this.LblTotal.Name = "LblTotal";
             this.LblTotal.Size = new System.Drawing.Size(101, 13);
             this.LblTotal.TabIndex = 10;
@@ -204,7 +229,7 @@
             this.TXTDescripcion.Multiline = true;
             this.TXTDescripcion.Name = "TXTDescripcion";
             this.TXTDescripcion.Size = new System.Drawing.Size(460, 85);
-            this.TXTDescripcion.TabIndex = 9;
+            this.TXTDescripcion.TabIndex = 5;
             // 
             // LBLDescripcion
             // 
@@ -239,6 +264,7 @@
             this.BTNCancelar.TabIndex = 5;
             this.BTNCancelar.Text = "Cancelar";
             this.BTNCancelar.UseVisualStyleBackColor = true;
+            this.BTNCancelar.Click += new System.EventHandler(this.BTNCancelar_Click);
             // 
             // BTNActualizar
             // 
@@ -349,5 +375,7 @@
         private System.Windows.Forms.TextBox TXTDescripcion;
         private System.Windows.Forms.Label LBLDescripcion;
         private System.Windows.Forms.ErrorProvider ErrorIcono;
+        private System.Windows.Forms.Button BTNDesactivar;
+        private System.Windows.Forms.Button BTNActivar;
     }
 }

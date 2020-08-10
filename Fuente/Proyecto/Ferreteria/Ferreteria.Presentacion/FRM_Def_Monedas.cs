@@ -24,7 +24,7 @@ namespace Ferreteria.Presentacion
             {
                 DGVListado.DataSource = NMonedas.Listar();
                 this.Formato();
-                //this.Limpiar();
+                this.Limpiar();
                 LblTotal.Text = "Total de Registros: " + Convert.ToString(DGVListado.Rows.Count);
             }
             catch (Exception ex)
@@ -52,7 +52,7 @@ namespace Ferreteria.Presentacion
             TXTSeries.Clear();
             TXTDescripcion.Clear();
             BTNGuardar.Visible = true;
-            BTNActualizar.Visible = false;
+            BTNActualizar.Visible = true;
             ErrorIcono.Clear();
             DGVListado.Columns[0].Visible = false;
             DGVListado.Columns[1].Visible = true;
@@ -91,11 +91,9 @@ namespace Ferreteria.Presentacion
 
         private void FRM_Def_Monedas_Load(object sender, EventArgs e)
         {
-
-        }
-
-       
-
+            BTNActivar.Visible = false;
+            BTNDesactivar.Visible = false;
+        }    
         private void BTNBuscar_Click(object sender, EventArgs e)
         {
             BTNNuevo.Enabled = false;
@@ -110,10 +108,12 @@ namespace Ferreteria.Presentacion
             this.Listar();
             TXTIdMoneda.Text = Convert.ToString((DGVListado.Rows.Count) + 1);
             TXTSeries.Focus();
+            BTNActivar.Enabled = false;
             TXTIdMoneda.Enabled = false;
             TXTIdMoneda.Enabled = false;
             BTNNuevo.Enabled = false;
             BTNGuardar.Enabled = true;
+            BTNActualizar.Enabled = false;
         }
 
         private void BTNGuardar_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace Ferreteria.Presentacion
             BTNNuevo.Enabled = true;
             BTNGuardar.Enabled = false;
             BTNBuscar.Enabled = true;
-
+            BTNActualizar.Enabled = false;
             try
             {
                 string Rpta = "";
@@ -151,7 +151,6 @@ namespace Ferreteria.Presentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
-
         private void BTNActualizar_Click(object sender, EventArgs e)
         {
             try
@@ -183,7 +182,6 @@ namespace Ferreteria.Presentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
-
         private void DGVListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -191,7 +189,7 @@ namespace Ferreteria.Presentacion
                 this.Limpiar();
                 BTNNuevo.Enabled = false;
                 BTNActualizar.Enabled = true;
-                BTNGuardar.Visible = false;
+                BTNGuardar.Enabled = false;
                 TXTIdMoneda.Text = Convert.ToString(DGVListado.CurrentRow.Cells["ID_MONEDA"].Value);
                 NombreAnt2 = Convert.ToString(DGVListado.CurrentRow.Cells["COD_MONEDA"].Value);
                 TXTSeries.Text = Convert.ToString(DGVListado.CurrentRow.Cells["COD_MONEDA"].Value);
@@ -202,6 +200,77 @@ namespace Ferreteria.Presentacion
             {
                 MessageBox.Show("Selecione desde la celda SIGLA", "SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void CHKSeleccionar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CHKSeleccionar.Checked)
+            {
+                DGVListado.Columns[0].Visible = true;
+                BTNActivar.Visible = true;
+                BTNDesactivar.Visible = true;
+                BTNEliminar.Visible = true;
+            }
+            else
+            {
+                DGVListado.Columns[0].Visible = false;
+                BTNActivar.Visible = false;
+                BTNDesactivar.Visible = false;
+                BTNEliminar.Visible = false;
+            }
+        }
+
+        private void DGVListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == DGVListado.Columns["SELECCIONAR"].Index) ;
+            {
+                DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)DGVListado.Rows[e.RowIndex].Cells["SELECCIONAR"];
+                ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
+            }
+        }      
+
+        private void BTNEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("Esta Seguro que desea eliminar el(los) registro(s)", "Sistema de Ventas", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Opcion == DialogResult.Yes)
+                {
+                    int Codigo;
+                    string Rpta = "";
+                    foreach (DataGridViewRow row in DGVListado.Rows)
+                    {
+                        if (Convert.ToBoolean(row.Cells[0].Value))
+                        {
+                            Codigo = Convert.ToInt32(row.Cells[1].Value);
+                            Rpta = NMonedas.Eliminar(Codigo);
+                            if (Rpta.Equals("OK"))
+                            {
+                                this.MensajeOK("Se eliminó el registro: " + Convert.ToString(row.Cells[2].Value));
+                            }
+                            else
+                            {
+                                this.MensajeError(Rpta);
+                            }
+                        }
+                    }
+                    this.Listar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void BTNCancelar_Click(object sender, EventArgs e)
+        {
+            this.Limpiar();
+            this.Listar();
+            TabGeneral.SelectedIndex = 0;
+            BTNNuevo.Enabled = true;
+            BTNActualizar.Enabled = true;
         }
     }
 }

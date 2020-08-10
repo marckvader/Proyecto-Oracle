@@ -72,7 +72,7 @@ namespace Ferreteria.Datos
             {
                 sqloraclecon = Conexion.getInstancia().CrearConexion();
                 sqloraclecon.Open();
-                OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_MONEDAS WHERE DESCRIPCION = :Descripcion", sqloraclecon);
+                OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_MONEDAS WHERE COD_MONEDA = :Cod_Moneda", sqloraclecon);
                 Comando.Parameters.Add(":Descripcion", Valor);
                 OracleDataReader Respuesta = Comando.ExecuteReader();
                 if (Respuesta.Read())

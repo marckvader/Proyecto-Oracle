@@ -224,13 +224,12 @@ namespace Ferreteria.Presentacion
 
         private void DGVCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == DGVCategoria.Columns["SELECCIONAR"].Index) ;
+            if (e.ColumnIndex == DGVCategoria.Columns["SELECCIONAR"].Index);
             {
                 DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)DGVCategoria.Rows[e.RowIndex].Cells["SELECCIONAR"];
                 ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
             }
         }
-
         private void BTNEliminar_Click(object sender, EventArgs e)
         {
             try

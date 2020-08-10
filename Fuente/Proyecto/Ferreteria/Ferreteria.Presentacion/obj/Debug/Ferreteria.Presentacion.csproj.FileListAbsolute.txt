@@ -56,3 +56,8 @@ E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presenta
 E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMLogin.resources
 E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMTiposCambio.resources
 E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Def_Monedas.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRMTiposCambio.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Def_Monedas.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Unds_Medidas.resources
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Unds_Medidas.resources
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_DATOS_EMPRESA.resources

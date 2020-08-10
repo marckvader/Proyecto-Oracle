@@ -45,9 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NCategoria.cs" />
+    <Compile Include="NEmpresa.cs" />
     <Compile Include="NMonedas.cs" />
     <Compile Include="NProvincias.cs" />
     <Compile Include="NTipoCia.cs" />
+    <Compile Include="NUnds_Medidas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

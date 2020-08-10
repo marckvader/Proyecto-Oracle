@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ferreteria.Entidades
 {
-    class TBL_UND_MED
+    public class TBL_UND_MED
     {
+        public int ID_Und_Medida { get; set; }
+        public string Cod_Medida { get; set; }
+        public string Descripcion { get; set; }
     }
 }

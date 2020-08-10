@@ -42,7 +42,7 @@ namespace Ferreteria.Negocio
         {
             DMonedas Datos = new DMonedas();
             TBL_MONEDAS Obj = new TBL_MONEDAS();
-            if (NombreAnt.Equals(Descripcion))
+            if (NombreAnt.Equals(Cod_Moneda))
             {
                 Obj.ID_Moneda = ID_Moneda;
                 Obj.Cod_Moneda = Cod_Moneda;
@@ -51,7 +51,7 @@ namespace Ferreteria.Negocio
             }
             else
             {
-                string Existe = Datos.Existe(Descripcion);
+                string Existe = Datos.Existe(Cod_Moneda);
                 if (Existe.Equals("1"))
                 {
                     return "La moneda ya Existe";

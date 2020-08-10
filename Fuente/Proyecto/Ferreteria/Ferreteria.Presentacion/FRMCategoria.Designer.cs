@@ -32,6 +32,8 @@
             this.TabGeneral = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.GBListado = new System.Windows.Forms.GroupBox();
+            this.BTNDesactivar = new System.Windows.Forms.Button();
+            this.BTNActivar = new System.Windows.Forms.Button();
             this.BTNEliminar = new System.Windows.Forms.Button();
             this.LBLTotal = new System.Windows.Forms.Label();
             this.CHKSeleccionar = new System.Windows.Forms.CheckBox();
@@ -54,8 +56,6 @@
             this.LBLCodigo = new System.Windows.Forms.Label();
             this.ErrorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.BTNSalir = new System.Windows.Forms.Button();
-            this.BTNActivar = new System.Windows.Forms.Button();
-            this.BTNDesactivar = new System.Windows.Forms.Button();
             this.TabGeneral.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBListado.SuspendLayout();
@@ -102,6 +102,26 @@
             this.GBListado.TabIndex = 1;
             this.GBListado.TabStop = false;
             this.GBListado.Text = "Listado y Consulta de Datos";
+            // 
+            // BTNDesactivar
+            // 
+            this.BTNDesactivar.Location = new System.Drawing.Point(333, 387);
+            this.BTNDesactivar.Name = "BTNDesactivar";
+            this.BTNDesactivar.Size = new System.Drawing.Size(75, 23);
+            this.BTNDesactivar.TabIndex = 8;
+            this.BTNDesactivar.Text = "Desactivar";
+            this.BTNDesactivar.UseVisualStyleBackColor = true;
+            this.BTNDesactivar.Click += new System.EventHandler(this.BTNDesactivar_Click);
+            // 
+            // BTNActivar
+            // 
+            this.BTNActivar.Location = new System.Drawing.Point(87, 387);
+            this.BTNActivar.Name = "BTNActivar";
+            this.BTNActivar.Size = new System.Drawing.Size(75, 23);
+            this.BTNActivar.TabIndex = 7;
+            this.BTNActivar.Text = "Activar";
+            this.BTNActivar.UseVisualStyleBackColor = true;
+            this.BTNActivar.Click += new System.EventHandler(this.BTNActivar_Click);
             // 
             // BTNEliminar
             // 
@@ -316,26 +336,6 @@
             this.BTNSalir.Text = "Salir";
             this.BTNSalir.UseVisualStyleBackColor = true;
             this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
-            // 
-            // BTNActivar
-            // 
-            this.BTNActivar.Location = new System.Drawing.Point(87, 387);
-            this.BTNActivar.Name = "BTNActivar";
-            this.BTNActivar.Size = new System.Drawing.Size(75, 23);
-            this.BTNActivar.TabIndex = 7;
-            this.BTNActivar.Text = "Activar";
-            this.BTNActivar.UseVisualStyleBackColor = true;
-            this.BTNActivar.Click += new System.EventHandler(this.BTNActivar_Click);
-            // 
-            // BTNDesactivar
-            // 
-            this.BTNDesactivar.Location = new System.Drawing.Point(333, 387);
-            this.BTNDesactivar.Name = "BTNDesactivar";
-            this.BTNDesactivar.Size = new System.Drawing.Size(75, 23);
-            this.BTNDesactivar.TabIndex = 8;
-            this.BTNDesactivar.Text = "Desactivar";
-            this.BTNDesactivar.UseVisualStyleBackColor = true;
-            this.BTNDesactivar.Click += new System.EventHandler(this.BTNDesactivar_Click);
             // 
             // FRMCategoria
             // 

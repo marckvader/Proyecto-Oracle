@@ -1,0 +1,95 @@
+2020-08-06 12:42:50: -- C#: ANÁLISIS comenzado por User en ordenador 'SIN-IT-2' (GoodSync v 9.7.6.6)
+2020-08-06 12:42:50: E:\Proyecto BD II Cuatrimestre V2 (E:/Proyecto BD II Cuatrimestre V2) <-> ~maguilar\OneDrive\UH\Proyecto BD II Cuatrimestre V2 (C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2)
+2020-08-06 12:42:50: I: State file does not exist: E:/Proyecto BD II Cuatrimestre V2/_gsdata_/_file_state_v4._gs
+2020-08-06 12:42:50: I: Archivos: 1.234 (excluidos 2). Carpetas: 290 (excluidas 1). E: NTFS, Libre: 212 GB, Total: 249 GB
+2020-08-06 12:42:50: D: State file does not exist: C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/_gsdata_/_file_state_v4._gs
+2020-08-06 12:42:50: D: Archivos: 1.234 (excluidos 2). Carpetas: 291 (excluidas 0). C: NTFS, Libre: 58,4 GB, Total: 237 GB
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/bin/Debug/Ferreteria.Datos.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/bin/Debug/Ferreteria.Datos.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/DMonedas.cs: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/obj/Debug/Ferreteria.Datos.csproj.CopyComplete: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/obj/Debug/Ferreteria.Datos.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/obj/Debug/Ferreteria.Datos.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Datos.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Datos.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Negocio.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Negocio.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/NMonedas.cs: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.csproj.CopyComplete: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.csprojAssemblyReference.cache: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Datos.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Datos.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Negocio.dll: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Negocio.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.exe: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRM_Def_Monedas.cs: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRM_Def_Monedas.Designer.cs: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRM_Def_Monedas.resx: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRMCategoria.cs: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.CopyComplete: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.GenerateResource.cache: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csprojAssemblyReference.cache: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.exe: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRM_Def_Monedas.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMArticulos.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMCategoria.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMLogin.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMPrincipal.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMProvincias.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMTipo_Cia.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMTiposCambio.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.pdb: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.Properties.Resources.resources: Conflicto: Archivos nuevos que son diferentes
+2020-08-06 12:42:50: Análisis completado con Conflictos. Resuelva los Conflictos seleccionando la dirección de sincronización adecuada y luego haga clic para sincronizar
+2020-08-06 12:42:50: Cambios: 39, Conflictos: 39, TiempoCopia: 0, EstadoCopia: 0/1.485, Errores: 0
+2020-08-06 12:42:50: -- Análisis Completado. Tiempo 00:00:01, Velocidad: 1.527 archivo/s
+2020-08-06 12:42:50: 
+2020-08-06 12:43:28: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2020-08-06 12:43:28: == C#: SINC comenzada por User en 'SIN-IT-2'
+2020-08-06 12:43:28: E:\Proyecto BD II Cuatrimestre V2 (E:/Proyecto BD II Cuatrimestre V2) <-> ~maguilar\OneDrive\UH\Proyecto BD II Cuatrimestre V2 (C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2)
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/bin/Debug/Ferreteria.Datos.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/bin/Debug/Ferreteria.Datos.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/DMonedas.cs: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/obj/Debug/Ferreteria.Datos.csproj.CopyComplete: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/obj/Debug/Ferreteria.Datos.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Datos/obj/Debug/Ferreteria.Datos.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Datos.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Datos.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Negocio.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/bin/Debug/Ferreteria.Negocio.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/NMonedas.cs: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.csproj.CopyComplete: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.csprojAssemblyReference.cache: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Negocio/obj/Debug/Ferreteria.Negocio.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Datos.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Datos.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Negocio.dll: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Negocio.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.exe: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRM_Def_Monedas.cs: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRM_Def_Monedas.Designer.cs: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRM_Def_Monedas.resx: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/FRMCategoria.cs: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.CopyComplete: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.GenerateResource.cache: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csprojAssemblyReference.cache: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.exe: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRM_Def_Monedas.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMArticulos.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMCategoria.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMLogin.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMPrincipal.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMProvincias.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMTipo_Cia.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.FRMTiposCambio.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.pdb: unresolved conflict results in No Copy
+2020-08-06 12:43:28: /Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.Properties.Resources.resources: unresolved conflict results in No Copy
+2020-08-06 12:43:28: Sinc. completada con 39 conflictos sin resolver. Haga clic en el botón Conflictos para ver los confilctos no resueltos
+2020-08-06 12:43:28: Elementos Sincronizados OK: 1.485, Errores: 0
+2020-08-06 12:43:28: == Sinc. Completa. Tiempo: 00:00:00, Velocidad: 0 bytes/s
+2020-08-06 12:43:28: 
