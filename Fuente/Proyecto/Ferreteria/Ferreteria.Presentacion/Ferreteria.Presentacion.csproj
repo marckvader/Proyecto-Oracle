@@ -127,6 +127,12 @@
     <Compile Include="FRM_Devoluciones.Designer.cs">
       <DependentUpon>FRM_Devoluciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_Tipo_Identificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Tipo_Identificacion.Designer.cs">
+      <DependentUpon>FRM_Tipo_Identificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_Unds_Medidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_Def_Monedas.resx">
       <DependentUpon>FRM_Def_Monedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Tipo_Identificacion.resx">
+      <DependentUpon>FRM_Tipo_Identificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_Unds_Medidas.resx">
       <DependentUpon>FRM_Unds_Medidas.cs</DependentUpon>

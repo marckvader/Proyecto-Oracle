@@ -111,5 +111,12 @@ namespace Ferreteria.Presentacion
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void TipoPersoneriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_Tipo_Identificacion frm = new FRM_Tipo_Identificacion();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -54,6 +54,7 @@
     <Compile Include="DMonedas.cs" />
     <Compile Include="DProvincias.cs" />
     <Compile Include="DTipoCia.cs" />
+    <Compile Include="DTipo_Identificacion.cs" />
     <Compile Include="DUnds_Medidas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

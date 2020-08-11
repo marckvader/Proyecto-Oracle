@@ -37,13 +37,36 @@
             this.TXTBuscar = new System.Windows.Forms.TextBox();
             this.BTNBuscar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TXTEmail = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.TXTWeb = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TXTCp = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.MTXTTelefono2 = new System.Windows.Forms.MaskedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.MTXTFax = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.MTXTTelefono1 = new System.Windows.Forms.MaskedTextBox();
+            this.CMBProvincia = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TXTNombre = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TXTRazonSocial = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.CMBTipoID = new System.Windows.Forms.ComboBox();
+            this.LBLTipoID = new System.Windows.Forms.Label();
+            this.LBLTipocia = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CMBTipoEmpresa = new System.Windows.Forms.ComboBox();
             this.LBLIndicacion = new System.Windows.Forms.Label();
             this.TXTDescripcion = new System.Windows.Forms.TextBox();
             this.LBLDescripcion = new System.Windows.Forms.Label();
             this.TXTIdentificacion = new System.Windows.Forms.TextBox();
             this.TXTCodigo = new System.Windows.Forms.TextBox();
             this.LBLCodigo = new System.Windows.Forms.Label();
-            this.DGVCategoria = new System.Windows.Forms.DataGridView();
+            this.DGVListado = new System.Windows.Forms.DataGridView();
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.TSBNuevo = new System.Windows.Forms.ToolStripButton();
@@ -61,35 +84,12 @@
             this.TSBUltimo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.TSBSalir = new System.Windows.Forms.ToolStripButton();
-            this.CMBTipoEmpresa = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LBLTipocia = new System.Windows.Forms.Label();
-            this.LBLTipoID = new System.Windows.Forms.Label();
-            this.CMBTipoID = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TXTRazonSocial = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TXTNombre = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CMBProvincia = new System.Windows.Forms.ComboBox();
-            this.MTXTTelefono1 = new System.Windows.Forms.MaskedTextBox();
-            this.MTXTFax = new System.Windows.Forms.MaskedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.MTXTTelefono2 = new System.Windows.Forms.MaskedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TXTCp = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.TXTWeb = new System.Windows.Forms.TextBox();
-            this.TXTEmail = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.ErrorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.TabGeneral.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBListado.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVCategoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).BeginInit();
             this.SuspendLayout();
@@ -192,6 +192,202 @@
             this.tabPage2.Text = "General";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // TXTEmail
+            // 
+            this.TXTEmail.Location = new System.Drawing.Point(541, 182);
+            this.TXTEmail.Name = "TXTEmail";
+            this.TXTEmail.Size = new System.Drawing.Size(389, 20);
+            this.TXTEmail.TabIndex = 15;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(493, 185);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 13);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "EMAIL:";
+            // 
+            // TXTWeb
+            // 
+            this.TXTWeb.Location = new System.Drawing.Point(128, 182);
+            this.TXTWeb.Name = "TXTWeb";
+            this.TXTWeb.Size = new System.Drawing.Size(350, 20);
+            this.TXTWeb.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(87, 185);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "WEB:";
+            // 
+            // TXTCp
+            // 
+            this.TXTCp.Location = new System.Drawing.Point(837, 156);
+            this.TXTCp.Name = "TXTCp";
+            this.TXTCp.Size = new System.Drawing.Size(93, 20);
+            this.TXTCp.TabIndex = 13;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(810, 159);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(24, 13);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "CP:";
+            // 
+            // MTXTTelefono2
+            // 
+            this.MTXTTelefono2.Location = new System.Drawing.Point(391, 156);
+            this.MTXTTelefono2.Mask = "(999) 0000-0000";
+            this.MTXTTelefono2.Name = "MTXTTelefono2";
+            this.MTXTTelefono2.Size = new System.Drawing.Size(168, 20);
+            this.MTXTTelefono2.TabIndex = 11;
+            this.MTXTTelefono2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(318, 159);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "TELÉFONO:";
+            // 
+            // MTXTFax
+            // 
+            this.MTXTFax.Location = new System.Drawing.Point(626, 156);
+            this.MTXTFax.Mask = "(999) 0000-0000";
+            this.MTXTFax.Name = "MTXTFax";
+            this.MTXTFax.Size = new System.Drawing.Size(168, 20);
+            this.MTXTFax.TabIndex = 12;
+            this.MTXTFax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(580, 159);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "FAX:";
+            // 
+            // MTXTTelefono1
+            // 
+            this.MTXTTelefono1.Location = new System.Drawing.Point(128, 156);
+            this.MTXTTelefono1.Mask = "(999) 0000-0000";
+            this.MTXTTelefono1.Name = "MTXTTelefono1";
+            this.MTXTTelefono1.Size = new System.Drawing.Size(168, 20);
+            this.MTXTTelefono1.TabIndex = 10;
+            this.MTXTTelefono1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CMBProvincia
+            // 
+            this.CMBProvincia.FormattingEnabled = true;
+            this.CMBProvincia.ItemHeight = 13;
+            this.CMBProvincia.Location = new System.Drawing.Point(752, 70);
+            this.CMBProvincia.Name = "CMBProvincia";
+            this.CMBProvincia.Size = new System.Drawing.Size(178, 21);
+            this.CMBProvincia.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(678, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "PROVINCIA:";
+            // 
+            // TXTNombre
+            // 
+            this.TXTNombre.Location = new System.Drawing.Point(128, 70);
+            this.TXTNombre.Name = "TXTNombre";
+            this.TXTNombre.Size = new System.Drawing.Size(517, 20);
+            this.TXTNombre.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(65, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "NOMBRE:";
+            // 
+            // TXTRazonSocial
+            // 
+            this.TXTRazonSocial.Location = new System.Drawing.Point(413, 44);
+            this.TXTRazonSocial.Name = "TXTRazonSocial";
+            this.TXTRazonSocial.Size = new System.Drawing.Size(517, 20);
+            this.TXTRazonSocial.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(318, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "RAZÓN SOCIAL:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Nº IDENTIFICACIÓN:";
+            // 
+            // CMBTipoID
+            // 
+            this.CMBTipoID.FormattingEnabled = true;
+            this.CMBTipoID.Location = new System.Drawing.Point(752, 18);
+            this.CMBTipoID.Name = "CMBTipoID";
+            this.CMBTipoID.Size = new System.Drawing.Size(178, 21);
+            this.CMBTipoID.TabIndex = 4;
+            // 
+            // LBLTipoID
+            // 
+            this.LBLTipoID.AutoSize = true;
+            this.LBLTipoID.Location = new System.Drawing.Point(623, 21);
+            this.LBLTipoID.Name = "LBLTipoID";
+            this.LBLTipoID.Size = new System.Drawing.Size(123, 13);
+            this.LBLTipoID.TabIndex = 14;
+            this.LBLTipoID.Text = "TIPO IDENTIFICACIÓN:";
+            // 
+            // LBLTipocia
+            // 
+            this.LBLTipocia.AutoSize = true;
+            this.LBLTipocia.Location = new System.Drawing.Point(318, 21);
+            this.LBLTipocia.Name = "LBLTipocia";
+            this.LBLTipocia.Size = new System.Drawing.Size(90, 13);
+            this.LBLTipocia.TabIndex = 13;
+            this.LBLTipocia.Text = "TIPO EMPRESA:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(53, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "DIRECCIÓN:";
+            // 
+            // CMBTipoEmpresa
+            // 
+            this.CMBTipoEmpresa.FormattingEnabled = true;
+            this.CMBTipoEmpresa.Location = new System.Drawing.Point(414, 18);
+            this.CMBTipoEmpresa.Name = "CMBTipoEmpresa";
+            this.CMBTipoEmpresa.Size = new System.Drawing.Size(168, 21);
+            this.CMBTipoEmpresa.TabIndex = 3;
+            this.CMBTipoEmpresa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBTipoEmpresa_KeyPress);
+            // 
             // LBLIndicacion
             // 
             this.LBLIndicacion.AutoSize = true;
@@ -207,7 +403,7 @@
             this.TXTDescripcion.Multiline = true;
             this.TXTDescripcion.Name = "TXTDescripcion";
             this.TXTDescripcion.Size = new System.Drawing.Size(802, 53);
-            this.TXTDescripcion.TabIndex = 5;
+            this.TXTDescripcion.TabIndex = 9;
             // 
             // LBLDescripcion
             // 
@@ -223,7 +419,7 @@
             this.TXTIdentificacion.Location = new System.Drawing.Point(128, 44);
             this.TXTIdentificacion.Name = "TXTIdentificacion";
             this.TXTIdentificacion.Size = new System.Drawing.Size(184, 20);
-            this.TXTIdentificacion.TabIndex = 3;
+            this.TXTIdentificacion.TabIndex = 5;
             // 
             // TXTCodigo
             // 
@@ -231,6 +427,7 @@
             this.TXTCodigo.Name = "TXTCodigo";
             this.TXTCodigo.Size = new System.Drawing.Size(184, 20);
             this.TXTCodigo.TabIndex = 2;
+            this.TXTCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTCodigo_KeyPress);
             // 
             // LBLCodigo
             // 
@@ -241,19 +438,19 @@
             this.LBLCodigo.TabIndex = 0;
             this.LBLCodigo.Text = "CÓDIGO EMPRESA:";
             // 
-            // DGVCategoria
+            // DGVListado
             // 
-            this.DGVCategoria.AllowUserToAddRows = false;
-            this.DGVCategoria.AllowUserToDeleteRows = false;
-            this.DGVCategoria.AllowUserToOrderColumns = true;
-            this.DGVCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVListado.AllowUserToAddRows = false;
+            this.DGVListado.AllowUserToDeleteRows = false;
+            this.DGVListado.AllowUserToOrderColumns = true;
+            this.DGVListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Seleccionar});
-            this.DGVCategoria.Location = new System.Drawing.Point(8, 28);
-            this.DGVCategoria.Name = "DGVCategoria";
-            this.DGVCategoria.ReadOnly = true;
-            this.DGVCategoria.Size = new System.Drawing.Size(944, 208);
-            this.DGVCategoria.TabIndex = 0;
+            this.DGVListado.Location = new System.Drawing.Point(8, 28);
+            this.DGVListado.Name = "DGVListado";
+            this.DGVListado.ReadOnly = true;
+            this.DGVListado.Size = new System.Drawing.Size(944, 208);
+            this.DGVListado.TabIndex = 0;
             // 
             // Seleccionar
             // 
@@ -293,6 +490,7 @@
             this.TSBNuevo.Name = "TSBNuevo";
             this.TSBNuevo.Size = new System.Drawing.Size(23, 22);
             this.TSBNuevo.Text = "toolStripButton1";
+            this.TSBNuevo.Click += new System.EventHandler(this.TSBNuevo_Click);
             // 
             // TSBBuscar
             // 
@@ -409,194 +607,6 @@
             this.TSBSalir.Text = "toolStripButton12";
             this.TSBSalir.Click += new System.EventHandler(this.TSBSalir_Click);
             // 
-            // CMBTipoEmpresa
-            // 
-            this.CMBTipoEmpresa.FormattingEnabled = true;
-            this.CMBTipoEmpresa.Location = new System.Drawing.Point(414, 18);
-            this.CMBTipoEmpresa.Name = "CMBTipoEmpresa";
-            this.CMBTipoEmpresa.Size = new System.Drawing.Size(168, 21);
-            this.CMBTipoEmpresa.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "DIRECCIÓN:";
-            // 
-            // LBLTipocia
-            // 
-            this.LBLTipocia.AutoSize = true;
-            this.LBLTipocia.Location = new System.Drawing.Point(318, 21);
-            this.LBLTipocia.Name = "LBLTipocia";
-            this.LBLTipocia.Size = new System.Drawing.Size(90, 13);
-            this.LBLTipocia.TabIndex = 13;
-            this.LBLTipocia.Text = "TIPO EMPRESA:";
-            // 
-            // LBLTipoID
-            // 
-            this.LBLTipoID.AutoSize = true;
-            this.LBLTipoID.Location = new System.Drawing.Point(623, 21);
-            this.LBLTipoID.Name = "LBLTipoID";
-            this.LBLTipoID.Size = new System.Drawing.Size(123, 13);
-            this.LBLTipoID.TabIndex = 14;
-            this.LBLTipoID.Text = "TIPO IDENTIFICACIÓN:";
-            // 
-            // CMBTipoID
-            // 
-            this.CMBTipoID.FormattingEnabled = true;
-            this.CMBTipoID.Location = new System.Drawing.Point(752, 18);
-            this.CMBTipoID.Name = "CMBTipoID";
-            this.CMBTipoID.Size = new System.Drawing.Size(178, 21);
-            this.CMBTipoID.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Nº IDENTIFICACIÓN:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 13);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "RAZÓN SOCIAL:";
-            // 
-            // TXTRazonSocial
-            // 
-            this.TXTRazonSocial.Location = new System.Drawing.Point(413, 44);
-            this.TXTRazonSocial.Name = "TXTRazonSocial";
-            this.TXTRazonSocial.Size = new System.Drawing.Size(517, 20);
-            this.TXTRazonSocial.TabIndex = 18;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "NOMBRE:";
-            // 
-            // TXTNombre
-            // 
-            this.TXTNombre.Location = new System.Drawing.Point(128, 70);
-            this.TXTNombre.Name = "TXTNombre";
-            this.TXTNombre.Size = new System.Drawing.Size(517, 20);
-            this.TXTNombre.TabIndex = 20;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(678, 73);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "PROVINCIA:";
-            // 
-            // CMBProvincia
-            // 
-            this.CMBProvincia.FormattingEnabled = true;
-            this.CMBProvincia.Location = new System.Drawing.Point(752, 70);
-            this.CMBProvincia.Name = "CMBProvincia";
-            this.CMBProvincia.Size = new System.Drawing.Size(178, 21);
-            this.CMBProvincia.TabIndex = 22;
-            // 
-            // MTXTTelefono1
-            // 
-            this.MTXTTelefono1.Location = new System.Drawing.Point(128, 156);
-            this.MTXTTelefono1.Name = "MTXTTelefono1";
-            this.MTXTTelefono1.Size = new System.Drawing.Size(168, 20);
-            this.MTXTTelefono1.TabIndex = 23;
-            // 
-            // MTXTFax
-            // 
-            this.MTXTFax.Location = new System.Drawing.Point(626, 156);
-            this.MTXTFax.Name = "MTXTFax";
-            this.MTXTFax.Size = new System.Drawing.Size(168, 20);
-            this.MTXTFax.TabIndex = 25;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(580, 159);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 13);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "FAX:";
-            // 
-            // MTXTTelefono2
-            // 
-            this.MTXTTelefono2.Location = new System.Drawing.Point(391, 156);
-            this.MTXTTelefono2.Name = "MTXTTelefono2";
-            this.MTXTTelefono2.Size = new System.Drawing.Size(168, 20);
-            this.MTXTTelefono2.TabIndex = 27;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(318, 159);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "TELÉFONO:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(810, 159);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 13);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "CP:";
-            // 
-            // TXTCp
-            // 
-            this.TXTCp.Location = new System.Drawing.Point(837, 156);
-            this.TXTCp.Name = "TXTCp";
-            this.TXTCp.Size = new System.Drawing.Size(93, 20);
-            this.TXTCp.TabIndex = 29;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(87, 185);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "WEB:";
-            // 
-            // TXTWeb
-            // 
-            this.TXTWeb.Location = new System.Drawing.Point(128, 182);
-            this.TXTWeb.Name = "TXTWeb";
-            this.TXTWeb.Size = new System.Drawing.Size(350, 20);
-            this.TXTWeb.TabIndex = 31;
-            // 
-            // TXTEmail
-            // 
-            this.TXTEmail.Location = new System.Drawing.Point(541, 182);
-            this.TXTEmail.Name = "TXTEmail";
-            this.TXTEmail.Size = new System.Drawing.Size(389, 20);
-            this.TXTEmail.TabIndex = 33;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(493, 185);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "EMAIL:";
-            // 
             // ErrorIcono
             // 
             this.ErrorIcono.ContainerControl = this;
@@ -608,17 +618,18 @@
             this.ClientSize = new System.Drawing.Size(968, 516);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.TabGeneral);
-            this.Controls.Add(this.DGVCategoria);
+            this.Controls.Add(this.DGVListado);
             this.Name = "FRM_DATOS_EMPRESA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Información General de la Empresa";
+            this.Load += new System.EventHandler(this.FRM_DATOS_EMPRESA_Load);
             this.TabGeneral.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.GBListado.ResumeLayout(false);
             this.GBListado.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVCategoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).EndInit();
@@ -635,7 +646,7 @@
         private System.Windows.Forms.CheckBox CHKSeleccionar;
         private System.Windows.Forms.TextBox TXTBuscar;
         private System.Windows.Forms.Button BTNBuscar;
-        private System.Windows.Forms.DataGridView DGVCategoria;
+        private System.Windows.Forms.DataGridView DGVListado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label LBLIndicacion;

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ferreteria.Entidades
 {
-    class TBL_TIPO_IDENTIFICACION
-    {
+    public class TBL_TIPO_IDENTIFICACION
+    {   public int ID_Tipo_Identificacion { get; set; }
+        public string Personeria { get; set; }
     }
 }

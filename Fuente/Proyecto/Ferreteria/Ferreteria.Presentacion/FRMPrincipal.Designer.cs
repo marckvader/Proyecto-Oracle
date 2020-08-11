@@ -51,6 +51,7 @@
             this.prametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoPersoneriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,7 +215,8 @@
             // prametrosToolStripMenuItem
             // 
             this.prametrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.empresaToolStripMenuItem});
+            this.empresaToolStripMenuItem,
+            this.tipoPersoneriasToolStripMenuItem});
             this.prametrosToolStripMenuItem.Name = "prametrosToolStripMenuItem";
             this.prametrosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.prametrosToolStripMenuItem.Text = "Parametros";
@@ -233,6 +235,13 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
+            // 
+            // tipoPersoneriasToolStripMenuItem
+            // 
+            this.tipoPersoneriasToolStripMenuItem.Name = "tipoPersoneriasToolStripMenuItem";
+            this.tipoPersoneriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tipoPersoneriasToolStripMenuItem.Text = "TipoPersonerias";
+            this.tipoPersoneriasToolStripMenuItem.Click += new System.EventHandler(this.TipoPersoneriasToolStripMenuItem_Click);
             // 
             // FRMPrincipal
             // 
@@ -281,6 +290,7 @@
         private System.Windows.Forms.ToolStripMenuItem empresaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposDeCambioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monedasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoPersoneriasToolStripMenuItem;
     }
 }
 
