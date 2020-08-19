@@ -1,0 +1,23 @@
+2020-08-13 18:49:38: -- C#: ANÁLISIS comenzado por User en ordenador 'SIN-IT-2' (GoodSync v 9.7.6.6)
+2020-08-13 18:49:38: E:\Proyecto BD II Cuatrimestre V2 (E:/Proyecto BD II Cuatrimestre V2) =NoPropDels=> ~maguilar\OneDrive\UH\Proyecto BD II Cuatrimestre V2 (C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2)
+2020-08-13 18:49:39: I: Archivos: 1.258 (excluidos 2). Carpetas: 291 (excluidas 2). E: NTFS, Libre: 212 GB, Total: 249 GB
+2020-08-13 18:49:39: D: Archivos: 1.258 (excluidos 1). Carpetas: 291 (excluidas 1). C: NTFS, Libre: 61,6 GB, Total: 237 GB
+2020-08-13 18:49:39: Cambios: 10, Conflictos: 0, TiempoCopia: 0, EstadoCopia: 0/0, Errores: 0
+2020-08-13 18:49:39: Left to Right: Copy File: 10 
+2020-08-13 18:49:39: -- Análisis Completado. Tiempo 00:00:01, Velocidad: 1.553 archivo/s
+2020-08-13 18:49:39: 
+2020-08-13 18:49:43: == C#: SINC comenzada por User en 'SIN-IT-2'
+2020-08-13 18:49:43: E:\Proyecto BD II Cuatrimestre V2 (E:/Proyecto BD II Cuatrimestre V2) =NoPropDels=> ~maguilar\OneDrive\UH\Proyecto BD II Cuatrimestre V2 (C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2)
+2020-08-13 18:49:43: Crear Carpeta 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/DiseñoBD/13082020'
+2020-08-13 18:49:43: Copiar Nueva 'E:/Proyecto BD II Cuatrimestre V2/DiseñoBD/13082020/BACKUPTOTAL.sql' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/DiseñoBD/13082020/BACKUPTOTAL.sql'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.exe' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.exe'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.pdb' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/bin/Debug/Ferreteria.Presentacion.pdb'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.CopyComplete' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.CopyComplete'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.CoreCompileInputs.cache' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.CoreCompileInputs.cache'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.GenerateResource.cache' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csproj.GenerateResource.cache'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csprojAssemblyReference.cache' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.csprojAssemblyReference.cache'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.exe' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.exe'
+2020-08-13 18:49:43: Copiar Sobre 'E:/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.pdb' -> 'C:/Users/maguilar/OneDrive/UH/Proyecto BD II Cuatrimestre V2/Fuente/Proyecto/Ferreteria/Ferreteria.Presentacion/obj/Debug/Ferreteria.Presentacion.pdb'
+2020-08-13 18:49:44: Elementos Sincronizados OK: 10, Errores: 0
+2020-08-13 18:49:44: == Sinc. Completa. Tiempo: 00:00:01, Velocidad: 0 bytes/s
+2020-08-13 18:49:44: 

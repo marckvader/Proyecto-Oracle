@@ -13,72 +13,105 @@ namespace Ferreteria.Negocio
     {
         public static DataTable Listar()
         {
-            DCategoria Datos = new DCategoria();
+            DEmpresa Datos = new DEmpresa();
             return Datos.Listar();
         }
         public static DataTable Buscar(string Valor)
         {
-            DCategoria Datos = new DCategoria();
+            DEmpresa Datos = new DEmpresa();
             return Datos.Buscar(Valor);
         }
-        public static string Insertar(int ID_Categoria, string Categoria, string Descripcion)
+        public static string Insertar(int IDCia, int IDtcia, int IDTipodi, string numid, string razon, string nombre, int IDProv, string direccion, string tel1, string tel2, string fax, string cp, string web, string email)
         {
-            DCategoria Datos = new DCategoria();
-            string Existe = Datos.Existe(Categoria);
+            DEmpresa Datos = new DEmpresa();
+            string Existe = Datos.Existe(numid);
             if (Existe.Equals("1"))
             {
-                return "La Categoría ya Existe";
+                return "La Empresa ya Existe";
             }
             else
             {
-                TBL_CATEGORIA Obj = new TBL_CATEGORIA();
-                Obj.ID_Categoria = ID_Categoria;
-                Obj.Categoria = Categoria;
-                Obj.Descripcion = Descripcion;
+                TBL_EMPRESA Obj = new TBL_EMPRESA();
+                Obj.ID_Cia = IDCia;
+                Obj.ID_Tipo_Cia = IDtcia;
+                Obj.ID_Tipo_Identificacion = IDTipodi;
+                Obj.Num_ID = numid;
+                Obj.Razon_Social = razon;
+                Obj.Nombre = nombre;
+                Obj.ID_Provincia = IDProv;
+                Obj.Direccion = direccion;
+                Obj.Tel1 = tel1;
+                Obj.Tel2 = tel2;
+                Obj.Fax = fax;
+                Obj.CP = cp;
+                Obj.Web = web;
+                Obj.Mail = email;
                 return Datos.Insertar(Obj);
             }
         }
-        public static string Actualizar(int ID_Categoria, string NombreAnt, string Categoria, string Descripcion)
+        public static string Actualizar(int IDCia, int IDtcia, int IDTipodi, string AntNumID, string numid, string razon, string nombre, int IDProv, string direccion, string tel1, string tel2, string fax, string cp, string web, string email)
         {
-            DCategoria Datos = new DCategoria();
-            TBL_CATEGORIA Obj = new TBL_CATEGORIA();
-            if (NombreAnt.Equals(Categoria))
+            DEmpresa Datos = new DEmpresa();
+            TBL_EMPRESA Obj = new TBL_EMPRESA();
+            if (AntNumID.Equals(numid))
             {
-                Obj.ID_Categoria = ID_Categoria;
-                Obj.Categoria = Categoria;
-                Obj.Descripcion = Descripcion;
+                Obj.ID_Cia = IDCia;
+                Obj.ID_Tipo_Cia = IDtcia;
+                Obj.ID_Tipo_Identificacion = IDTipodi;
+                Obj.Num_ID = numid;
+                Obj.Razon_Social = razon;
+                Obj.Nombre = nombre;
+                Obj.ID_Provincia = IDProv;
+                Obj.Direccion = direccion;
+                Obj.Tel1 = tel1;
+                Obj.Tel2 = tel2;
+                Obj.Fax = fax;
+                Obj.CP = cp;
+                Obj.Web = web;
+                Obj.Mail = email;
                 return Datos.Actualizar(Obj);
             }
             else
             {
-                string Existe = Datos.Existe(Categoria);
+                string Existe = Datos.Existe(numid);
                 if (Existe.Equals("1"))
                 {
-                    return "La Categoría ya Existe";
+                    return "La Empresa o sucursal ya Existe";
                 }
                 else
                 {
-                    Obj.ID_Categoria = ID_Categoria;
-                    Obj.Categoria = Categoria;
-                    Obj.Descripcion = Descripcion;
+                    Obj.ID_Cia = IDCia;
+                    Obj.ID_Tipo_Cia = IDtcia;
+                    Obj.ID_Tipo_Identificacion = IDTipodi;
+                    Obj.Num_ID = numid;
+                    Obj.Razon_Social = razon;
+                    Obj.Nombre = nombre;
+                    Obj.ID_Provincia = IDProv;
+                    Obj.Direccion = direccion;
+                    Obj.Tel1 = tel1;
+                    Obj.Tel2 = tel2;
+                    Obj.Fax = fax;
+                    Obj.CP = cp;
+                    Obj.Web = web;
+                    Obj.Mail = email;
                     return Datos.Actualizar(Obj);
                 }
             }
         }
-        public static string Eliminar(int Id)
+        public static string Eliminar(string numid)
         {
-            DCategoria datos = new DCategoria();
-            return datos.Eliminar(Id);
+            DEmpresa datos = new DEmpresa();
+            return datos.Eliminar(numid);
         }
-        public static string Activar(int Id)
+        public static string Activar(string numid)
         {
-            DCategoria datos = new DCategoria();
-            return datos.Activar(Id);
+            DEmpresa datos = new DEmpresa();
+            return datos.Activar(numid);
         }
-        public static string Desactivar(int Id)
+        public static string Desactivar(string numid)
         {
-            DCategoria datos = new DCategoria();
-            return datos.Desactivar(Id);
+            DEmpresa datos = new DEmpresa();
+            return datos.Desactivar(numid);
         }
     }
 }

@@ -62,3 +62,5 @@ C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreter
 E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Unds_Medidas.resources
 E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_DATOS_EMPRESA.resources
 E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Tipo_Identificacion.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_DATOS_EMPRESA.resources
+C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Presentacion\obj\Debug\Ferreteria.Presentacion.FRM_Tipo_Identificacion.resources

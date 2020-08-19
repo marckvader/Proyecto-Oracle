@@ -61,7 +61,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CMBTipoEmpresa = new System.Windows.Forms.ComboBox();
             this.LBLIndicacion = new System.Windows.Forms.Label();
-            this.TXTDescripcion = new System.Windows.Forms.TextBox();
+            this.TXTDireccion = new System.Windows.Forms.TextBox();
             this.LBLDescripcion = new System.Windows.Forms.Label();
             this.TXTIdentificacion = new System.Windows.Forms.TextBox();
             this.TXTCodigo = new System.Windows.Forms.TextBox();
@@ -136,6 +136,7 @@
             this.CHKSeleccionar.TabIndex = 4;
             this.CHKSeleccionar.Text = "Seleccionar";
             this.CHKSeleccionar.UseVisualStyleBackColor = true;
+            this.CHKSeleccionar.CheckedChanged += new System.EventHandler(this.CHKSeleccionar_CheckedChanged);
             // 
             // TXTBuscar
             // 
@@ -179,7 +180,7 @@
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.CMBTipoEmpresa);
             this.tabPage2.Controls.Add(this.LBLIndicacion);
-            this.tabPage2.Controls.Add(this.TXTDescripcion);
+            this.tabPage2.Controls.Add(this.TXTDireccion);
             this.tabPage2.Controls.Add(this.LBLDescripcion);
             this.tabPage2.Controls.Add(this.TXTIdentificacion);
             this.tabPage2.Controls.Add(this.TXTCodigo);
@@ -214,6 +215,7 @@
             this.TXTWeb.Name = "TXTWeb";
             this.TXTWeb.Size = new System.Drawing.Size(350, 20);
             this.TXTWeb.TabIndex = 14;
+            this.TXTWeb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTWeb_KeyPress);
             // 
             // label9
             // 
@@ -230,6 +232,7 @@
             this.TXTCp.Name = "TXTCp";
             this.TXTCp.Size = new System.Drawing.Size(93, 20);
             this.TXTCp.TabIndex = 13;
+            this.TXTCp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTCp_KeyPress);
             // 
             // label8
             // 
@@ -248,6 +251,7 @@
             this.MTXTTelefono2.Size = new System.Drawing.Size(168, 20);
             this.MTXTTelefono2.TabIndex = 11;
             this.MTXTTelefono2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MTXTTelefono2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MTXTTelefono2_KeyPress);
             // 
             // label7
             // 
@@ -266,6 +270,7 @@
             this.MTXTFax.Size = new System.Drawing.Size(168, 20);
             this.MTXTFax.TabIndex = 12;
             this.MTXTFax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MTXTFax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MTXTFax_KeyPress);
             // 
             // label6
             // 
@@ -284,6 +289,7 @@
             this.MTXTTelefono1.Size = new System.Drawing.Size(168, 20);
             this.MTXTTelefono1.TabIndex = 10;
             this.MTXTTelefono1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.MTXTTelefono1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MTXTTelefono1_KeyPress);
             // 
             // CMBProvincia
             // 
@@ -293,6 +299,7 @@
             this.CMBProvincia.Name = "CMBProvincia";
             this.CMBProvincia.Size = new System.Drawing.Size(178, 21);
             this.CMBProvincia.TabIndex = 8;
+            this.CMBProvincia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBProvincia_KeyPress);
             // 
             // label5
             // 
@@ -309,6 +316,7 @@
             this.TXTNombre.Name = "TXTNombre";
             this.TXTNombre.Size = new System.Drawing.Size(517, 20);
             this.TXTNombre.TabIndex = 7;
+            this.TXTNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTNombre_KeyPress);
             // 
             // label4
             // 
@@ -325,6 +333,7 @@
             this.TXTRazonSocial.Name = "TXTRazonSocial";
             this.TXTRazonSocial.Size = new System.Drawing.Size(517, 20);
             this.TXTRazonSocial.TabIndex = 6;
+            this.TXTRazonSocial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTRazonSocial_KeyPress);
             // 
             // label3
             // 
@@ -351,6 +360,7 @@
             this.CMBTipoID.Name = "CMBTipoID";
             this.CMBTipoID.Size = new System.Drawing.Size(178, 21);
             this.CMBTipoID.TabIndex = 4;
+            this.CMBTipoID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBTipoID_KeyPress);
             // 
             // LBLTipoID
             // 
@@ -397,13 +407,14 @@
             this.LBLIndicacion.TabIndex = 10;
             this.LBLIndicacion.Text = "(*) Indica que el dato es Obligatorio.";
             // 
-            // TXTDescripcion
+            // TXTDireccion
             // 
-            this.TXTDescripcion.Location = new System.Drawing.Point(128, 96);
-            this.TXTDescripcion.Multiline = true;
-            this.TXTDescripcion.Name = "TXTDescripcion";
-            this.TXTDescripcion.Size = new System.Drawing.Size(802, 53);
-            this.TXTDescripcion.TabIndex = 9;
+            this.TXTDireccion.Location = new System.Drawing.Point(128, 96);
+            this.TXTDireccion.Multiline = true;
+            this.TXTDireccion.Name = "TXTDireccion";
+            this.TXTDireccion.Size = new System.Drawing.Size(802, 53);
+            this.TXTDireccion.TabIndex = 9;
+            this.TXTDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTDireccion_KeyPress);
             // 
             // LBLDescripcion
             // 
@@ -420,6 +431,7 @@
             this.TXTIdentificacion.Name = "TXTIdentificacion";
             this.TXTIdentificacion.Size = new System.Drawing.Size(184, 20);
             this.TXTIdentificacion.TabIndex = 5;
+            this.TXTIdentificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTIdentificacion_KeyPress);
             // 
             // TXTCodigo
             // 
@@ -451,6 +463,8 @@
             this.DGVListado.ReadOnly = true;
             this.DGVListado.Size = new System.Drawing.Size(944, 208);
             this.DGVListado.TabIndex = 0;
+            this.DGVListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellContentClick);
+            this.DGVListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellDoubleClick);
             // 
             // Seleccionar
             // 
@@ -509,6 +523,7 @@
             this.TSBGuardar.Name = "TSBGuardar";
             this.TSBGuardar.Size = new System.Drawing.Size(23, 22);
             this.TSBGuardar.Text = "toolStripButton2";
+            this.TSBGuardar.Click += new System.EventHandler(this.TSBGuardar_Click);
             // 
             // TSBActualizar
             // 
@@ -650,7 +665,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label LBLIndicacion;
-        private System.Windows.Forms.TextBox TXTDescripcion;
+        private System.Windows.Forms.TextBox TXTDireccion;
         private System.Windows.Forms.Label LBLDescripcion;
         private System.Windows.Forms.TextBox TXTIdentificacion;
         private System.Windows.Forms.TextBox TXTCodigo;
