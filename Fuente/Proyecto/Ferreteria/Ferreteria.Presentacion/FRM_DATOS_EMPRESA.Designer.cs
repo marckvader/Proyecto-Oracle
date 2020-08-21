@@ -144,6 +144,7 @@
             this.TXTBuscar.Name = "TXTBuscar";
             this.TXTBuscar.Size = new System.Drawing.Size(340, 20);
             this.TXTBuscar.TabIndex = 3;
+            this.TXTBuscar.TextChanged += new System.EventHandler(this.TXTBuscar_TextChanged);
             // 
             // BTNBuscar
             // 
@@ -153,6 +154,7 @@
             this.BTNBuscar.TabIndex = 2;
             this.BTNBuscar.Text = "Buscar";
             this.BTNBuscar.UseVisualStyleBackColor = true;
+            this.BTNBuscar.Click += new System.EventHandler(this.BTNBuscar_Click);
             // 
             // tabPage2
             // 
@@ -464,7 +466,7 @@
             this.DGVListado.Size = new System.Drawing.Size(944, 208);
             this.DGVListado.TabIndex = 0;
             this.DGVListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellContentClick);
-            this.DGVListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellDoubleClick);
+            this.DGVListado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellContentDoubleClick);
             // 
             // Seleccionar
             // 
@@ -504,6 +506,7 @@
             this.TSBNuevo.Name = "TSBNuevo";
             this.TSBNuevo.Size = new System.Drawing.Size(23, 22);
             this.TSBNuevo.Text = "toolStripButton1";
+            this.TSBNuevo.ToolTipText = "Nuevo";
             this.TSBNuevo.Click += new System.EventHandler(this.TSBNuevo_Click);
             // 
             // TSBBuscar
@@ -514,6 +517,8 @@
             this.TSBBuscar.Name = "TSBBuscar";
             this.TSBBuscar.Size = new System.Drawing.Size(23, 22);
             this.TSBBuscar.Text = "toolStripButton7";
+            this.TSBBuscar.ToolTipText = "Buscar";
+            this.TSBBuscar.Click += new System.EventHandler(this.TSBBuscar_Click);
             // 
             // TSBGuardar
             // 
@@ -523,6 +528,7 @@
             this.TSBGuardar.Name = "TSBGuardar";
             this.TSBGuardar.Size = new System.Drawing.Size(23, 22);
             this.TSBGuardar.Text = "toolStripButton2";
+            this.TSBGuardar.ToolTipText = "Guardar";
             this.TSBGuardar.Click += new System.EventHandler(this.TSBGuardar_Click);
             // 
             // TSBActualizar
@@ -533,6 +539,8 @@
             this.TSBActualizar.Name = "TSBActualizar";
             this.TSBActualizar.Size = new System.Drawing.Size(23, 22);
             this.TSBActualizar.Text = "toolStripButton3";
+            this.TSBActualizar.ToolTipText = "Actualizar";
+            this.TSBActualizar.Click += new System.EventHandler(this.TSBActualizar_Click);
             // 
             // TSBEliminar
             // 
@@ -542,6 +550,8 @@
             this.TSBEliminar.Name = "TSBEliminar";
             this.TSBEliminar.Size = new System.Drawing.Size(23, 22);
             this.TSBEliminar.Text = "toolStripButton4";
+            this.TSBEliminar.ToolTipText = "Borrar";
+            this.TSBEliminar.Click += new System.EventHandler(this.TSBEliminar_Click);
             // 
             // toolStripSeparator1
             // 
@@ -556,6 +566,8 @@
             this.TSBActivar.Name = "TSBActivar";
             this.TSBActivar.Size = new System.Drawing.Size(23, 22);
             this.TSBActivar.Text = "toolStripButton5";
+            this.TSBActivar.ToolTipText = "Activar";
+            this.TSBActivar.Click += new System.EventHandler(this.TSBActivar_Click);
             // 
             // TSBDesactivar
             // 
@@ -565,6 +577,8 @@
             this.TSBDesactivar.Name = "TSBDesactivar";
             this.TSBDesactivar.Size = new System.Drawing.Size(23, 22);
             this.TSBDesactivar.Text = "toolStripButton6";
+            this.TSBDesactivar.ToolTipText = "Desactivar";
+            this.TSBDesactivar.Click += new System.EventHandler(this.TSBDesactivar_Click);
             // 
             // toolStripSeparator2
             // 
@@ -579,6 +593,7 @@
             this.TSBPrimero.Name = "TSBPrimero";
             this.TSBPrimero.Size = new System.Drawing.Size(23, 22);
             this.TSBPrimero.Text = "toolStripButton8";
+            this.TSBPrimero.ToolTipText = "Primero";
             // 
             // TSBAnterior
             // 
@@ -588,6 +603,7 @@
             this.TSBAnterior.Name = "TSBAnterior";
             this.TSBAnterior.Size = new System.Drawing.Size(23, 22);
             this.TSBAnterior.Text = "toolStripButton9";
+            this.TSBAnterior.ToolTipText = "Anterior";
             // 
             // TSBSiguiente
             // 
@@ -597,6 +613,7 @@
             this.TSBSiguiente.Name = "TSBSiguiente";
             this.TSBSiguiente.Size = new System.Drawing.Size(23, 22);
             this.TSBSiguiente.Text = "toolStripButton10";
+            this.TSBSiguiente.ToolTipText = "Siguiente";
             // 
             // TSBUltimo
             // 
@@ -606,6 +623,7 @@
             this.TSBUltimo.Name = "TSBUltimo";
             this.TSBUltimo.Size = new System.Drawing.Size(23, 22);
             this.TSBUltimo.Text = "toolStripButton11";
+            this.TSBUltimo.ToolTipText = "Ultimo";
             // 
             // toolStripSeparator3
             // 
@@ -620,6 +638,7 @@
             this.TSBSalir.Name = "TSBSalir";
             this.TSBSalir.Size = new System.Drawing.Size(23, 22);
             this.TSBSalir.Text = "toolStripButton12";
+            this.TSBSalir.ToolTipText = "Salir";
             this.TSBSalir.Click += new System.EventHandler(this.TSBSalir_Click);
             // 
             // ErrorIcono

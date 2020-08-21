@@ -14,7 +14,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("LISTAR_TBL_TIPOID", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
@@ -39,7 +39,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BUSCAR_TBL_TIPOIDENTIF", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("TIPOID", OracleDbType.Varchar2).Value = Valor;
@@ -65,7 +65,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 sqloraclecon.Open();
                 OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_TIPO_IDENTIFICACION WHERE PERSONERIA = :Personeria", sqloraclecon);
                 Comando.Parameters.Add(":Personeria", Valor);
@@ -95,7 +95,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("INS_TBL_TIPO_IDENTIF", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDTIPO", OracleDbType.Int16).Value = Obj.ID_Tipo_Identificacion;
@@ -119,7 +119,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACT_TBL_TIPOID", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDTIPO", OracleDbType.Int16).Value = Obj.ID_Tipo_Identificacion;
@@ -143,7 +143,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BORRAR_TBL_IDPERSO", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("ID_PERSO", OracleDbType.Int16).Value = Id;

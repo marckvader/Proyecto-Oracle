@@ -31,7 +31,7 @@ namespace Ferreteria.Datos
             }
             return Cadena;
         }
-        public static Conexion getInstancia()
+        public static Conexion GetInstancia()
         {
             if (Con == null)
             {

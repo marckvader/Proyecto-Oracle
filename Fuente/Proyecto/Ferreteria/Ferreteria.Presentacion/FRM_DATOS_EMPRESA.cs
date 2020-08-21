@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ferreteria.Negocio;
 
@@ -13,11 +8,11 @@ namespace Ferreteria.Presentacion
 {
     public partial class FRM_DATOS_EMPRESA : Form
     {
+        private string AntNumID;
         public FRM_DATOS_EMPRESA()
         {
             InitializeComponent();
         }
-
         private void Listar()
         {
             try
@@ -25,12 +20,37 @@ namespace Ferreteria.Presentacion
                 DGVListado.DataSource = NEmpresa.Listar();
                 this.Formato();
                 this.Limpiar();
+                
+               // TXTEmail.Text = datosimp.Rows[0][2].ToString();
+                //TXTDireccion.Text = Convert.ToString(datosimp.DataSet["PERSONERIA"]);
                 //LBLTotal.Text = "Total de Registros: " + Convert.ToString(DGVCategoria.Rows.Count);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+        private void ListarDetallado()
+        {
+            DataTable DatosImp = new DataTable();
+            DatosImp = NEmpresa.ListarDetallado();
+
+            TXTCodigo.Text = DatosImp.Rows[0][0].ToString();
+            /*this.CargarCMBTipoEmpresa();
+            this.CargarCMBTipoID();
+            TXTIdentificacion.Clear();
+            TXTRazonSocial.Clear();
+            TXTNombre.Clear();
+            this.CargarCMBProvincias();
+            TXTDireccion.Clear();
+            MTXTTelefono1.Clear();
+            MTXTTelefono2.Clear();
+            MTXTFax.Clear();
+            TXTCp.Clear();
+            TXTWeb.Clear();
+            TXTEmail.Clear();*/
+
+
         }
         private void Formato()
         {
@@ -61,9 +81,21 @@ namespace Ferreteria.Presentacion
             MTXTFax.Clear();
             TXTCp.Clear();
             TXTWeb.Clear();
-            TXTEmail.Clear();                               
+            TXTEmail.Clear();
+            CHKSeleccionar.Checked = false;
         }
-
+        private void Buscar()
+        {
+            try
+            {
+                DGVListado.DataSource = NEmpresa.Buscar(TXTBuscar.Text);
+                //LBLTotal.Text = "Total de Registros: " + Convert.ToString(DGVCategoria.Rows.Count);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
         private void MensajeError(string Mensaje)
         {
             MessageBox.Show(Mensaje, "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -72,7 +104,16 @@ namespace Ferreteria.Presentacion
         {
             MessageBox.Show(Mensaje, "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
-        /*********** LOGICA DE CRUD EN LOS CONTROLES ***********/
+        /********************* LOGICA DE CRUD EN LOS CONTROLES *********************/
+        /********************* INICIO BOTONES DEL MENU *****************************/
+        private void BTNBuscar_Click(object sender, EventArgs e)
+        {
+            this.Buscar();
+        }
+        private void TSBBuscar_Click(object sender, EventArgs e)
+        {
+            this.Buscar();
+        }
         private void TSBGuardar_Click(object sender, EventArgs e)
         {
             TSBNuevo.Enabled = true;
@@ -109,6 +150,142 @@ namespace Ferreteria.Presentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+        private void TSBActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string Rpta = "";
+                if (TXTRazonSocial.Text == string.Empty || TXTIdentificacion.Text == string.Empty || TXTCodigo.Text == string.Empty)
+                {
+                    this.MensajeError("El estacio esta en blanco, por favor ingrese un dato valido, el campo sera remarcado");
+                    ErrorIcono.SetError(TXTCodigo, "Ingrese el Valor");
+                    ErrorIcono.SetError(TXTRazonSocial, "Ingrese el Valor");
+                    ErrorIcono.SetError(TXTIdentificacion, "Ingrese el Valor");
+                }
+                else
+                {
+                    Rpta = NEmpresa.Actualizar(Convert.ToInt32(TXTCodigo.Text), Convert.ToInt32(CMBTipoEmpresa.SelectedValue), Convert.ToInt32(CMBTipoID.SelectedValue), TXTIdentificacion.Text.Trim(), AntNumID,TXTRazonSocial.Text.Trim(), TXTNombre.Text.Trim(), Convert.ToInt32(CMBProvincia.SelectedValue), TXTDireccion.Text.Trim(), MTXTTelefono1.Text.Trim(), MTXTTelefono2.Text.Trim(), MTXTFax.Text.Trim(), TXTCp.Text.Trim(), TXTWeb.Text.Trim(), TXTEmail.Text.Trim());
+                    if (Rpta.Equals("OK"))
+                    {
+                        this.MensajeOK("Se actualizó de forma correcta el registro");
+                        this.Limpiar();
+                        this.Listar();
+                    }
+                    else
+                    {
+                        this.MensajeError(Rpta);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+        private void TSBEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("Esta Seguro que desea eliminar el(los) registro(s)", "Sistema de Ventas", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Opcion == DialogResult.Yes)
+                {
+                    int Codigo;
+                    string Rpta = "";
+                    foreach (DataGridViewRow row in DGVListado.Rows)
+                    {
+                        if (Convert.ToBoolean(row.Cells[0].Value))
+                        {
+                            Codigo = Convert.ToInt32(row.Cells[1].Value);
+                            Rpta = NEmpresa.Eliminar(Codigo);
+                            if (Rpta.Equals("OK"))
+                            {
+                                this.MensajeOK("Se eliminó el registro: " + Convert.ToString(row.Cells[2].Value));
+                            }
+                            else
+                            {
+                                this.MensajeError(Rpta);
+                            }
+                        }
+                    }
+                    this.Listar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+        private void TSBActivar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("Esta Seguro que desea Activar el(los) registro(s)", "Sistema de Ventas", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Opcion == DialogResult.Yes)
+                {
+                    int Codigo;
+                    string Rpta = "";
+                    foreach (DataGridViewRow row in DGVListado.Rows)
+                    {
+                        if (Convert.ToBoolean(row.Cells[0].Value))
+                        {
+                            Codigo = Convert.ToInt32(row.Cells[1].Value);
+                            Rpta = NEmpresa.Activar(Codigo);
+                            if (Rpta.Equals("OK"))
+                            {
+                                this.MensajeOK("Se Activó el registro: " + Convert.ToString(row.Cells[2].Value));
+                            }
+                            else
+                            {
+                                this.MensajeError(Rpta);
+                            }
+                        }
+                    }
+                    this.Listar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void TSBDesactivar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult Opcion;
+                Opcion = MessageBox.Show("Esta Seguro que desea desactivar el(los) registro(s)", "Sistema de Ventas", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Opcion == DialogResult.Yes)
+                {
+                    int Codigo;
+                    string Rpta = "";
+                    foreach (DataGridViewRow row in DGVListado.Rows)
+                    {
+                        if (Convert.ToBoolean(row.Cells[0].Value))
+                        {
+                            Codigo = Convert.ToInt32(row.Cells[1].Value);
+                            Rpta = NEmpresa.Desactivar(Codigo);
+                            if (Rpta.Equals("OK"))
+                            {
+                                this.MensajeOK("Se Desactivó el registro: " + Convert.ToString(row.Cells[2].Value));
+                            }
+                            else
+                            {
+                                this.MensajeError(Rpta);
+                            }
+                        }
+                    }
+                    this.Listar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+        /******************** FIN BOTONES DEL MENU ********************/
         private void CHKSeleccionar_CheckedChanged(object sender, EventArgs e)
         {
             if (CHKSeleccionar.Checked)
@@ -126,7 +303,6 @@ namespace Ferreteria.Presentacion
                 TSBEliminar.Enabled = false;
             }
         }
-
         private void DGVListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == DGVListado.Columns["SELECCIONAR"].Index) ;
@@ -135,35 +311,22 @@ namespace Ferreteria.Presentacion
                 ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
             }
         }
-        private void DGVListado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void DGVListado_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
                 this.Limpiar();
                 TSBNuevo.Enabled = false;
                 TSBActualizar.Enabled = true;
-                TSBGuardar.Visible = false;
-
+                //TSBGuardar.Visible = false;
                 TXTCodigo.Text = Convert.ToString(DGVListado.CurrentRow.Cells["CÓDIGO"].Value);
-                CargarCMBTipoEmpresa. = Convert.ToString(DGVListado.CurrentRow.Cells["PERSONERIA"].Value);
-                TXTCategoria.Text = Convert.ToString(DGVListado.CurrentRow.Cells["Nº IDENTIFICACION"].Value);
-                TXTDescripcion.Text = Convert.ToString(DGVListado.CurrentRow.Cells["RAZÓN SOCIAL"].Value);
-                TXTDescripcion.Text = Convert.ToString(DGVListado.CurrentRow.Cells["TIPO DE COMPAÑIA"].Value);
-                TXTCodigo.Clear();
-                /*this.CargarCMBTipoEmpresa();
-                this.CargarCMBTipoID();
-                .Clear();
-                TXTRazonSocial.Clear();
-                TXTNombre.Clear();
-                this.CargarCMBProvincias();
-                TXTDireccion.Clear();
-                MTXTTelefono1.Clear();
-                MTXTTelefono2.Clear();
-                MTXTFax.Clear();
-                TXTCp.Clear();
-                TXTWeb.Clear();
-                TXTEmail.Clear();
-                TabGeneral.SelectedIndex = 1;*/
+                CMBTipoEmpresa.Text = Convert.ToString(DGVListado.CurrentRow.Cells["PERSONERIA"].Value);
+                TXTIdentificacion.Text = Convert.ToString(DGVListado.CurrentRow.Cells["Nº IDENTIFICACION"].Value);
+                AntNumID = Convert.ToString(DGVListado.CurrentRow.Cells["Nº IDENTIFICACION"].Value);
+                TXTRazonSocial.Text = Convert.ToString(DGVListado.CurrentRow.Cells["RAZÓN SOCIAL"].Value);
+                CMBTipoEmpresa.Text = Convert.ToString(DGVListado.CurrentRow.Cells["TIPO DE COMPAÑIA"].Value);
+                TabGeneral.SelectedIndex = 1;
+                
             }
             catch (Exception)
             {
@@ -171,7 +334,7 @@ namespace Ferreteria.Presentacion
             }
         }
 
-        /********** FORMATO DE LOS CONTROLES  **********/
+        /******************** FORMATO DE LOS CONTROLES  ********************/
 
         private void CargarCMBProvincias()
         {
@@ -198,10 +361,12 @@ namespace Ferreteria.Presentacion
         private void FRM_DATOS_EMPRESA_Load(object sender, EventArgs e)
         {
             this.Listar();
+            this.ListarDetallado();
             this.CargarCMBProvincias();
             this.CargarCMBTipoEmpresa();
             this.CargarCMBTipoID();
             TXTCodigo.Focus();
+            TXTBuscar.Focus();
         }
         private void TSBNuevo_Click(object sender, EventArgs e)
         {
@@ -209,9 +374,8 @@ namespace Ferreteria.Presentacion
             TabGeneral.SelectedIndex = 1;
             TXTCodigo.Text = Convert.ToString(DGVListado.Rows.Count+1);
             TXTCodigo.Enabled = false;
-            CMBTipoEmpresa.Focus();
+            CMBTipoEmpresa.Focus();        
         }
-
         private void TXTCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -239,7 +403,6 @@ namespace Ferreteria.Presentacion
                 TXTIdentificacion.BackColor = Color.LightBlue;
             }
         }
-
         private void TXTIdentificacion_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -276,7 +439,6 @@ namespace Ferreteria.Presentacion
                 TXTDireccion.BackColor = Color.LightBlue;
             }
         }
-
         private void TXTDireccion_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -295,7 +457,6 @@ namespace Ferreteria.Presentacion
                 MTXTTelefono2.BackColor = Color.LightBlue;
             }
         }
-
         private void MTXTTelefono2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -314,7 +475,6 @@ namespace Ferreteria.Presentacion
                 TXTCp.BackColor = Color.LightBlue;
             }
         }
-
         private void TXTCp_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -324,7 +484,6 @@ namespace Ferreteria.Presentacion
                 TXTWeb.BackColor = Color.LightBlue;
             }
         }
-
         private void TXTWeb_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -333,9 +492,11 @@ namespace Ferreteria.Presentacion
                 TXTEmail.Focus();
                 TXTEmail.BackColor = Color.LightBlue;
             }
-        }       
+        }
+
+        private void TXTBuscar_TextChanged(object sender, EventArgs e)
+        {
+            this.Buscar();
+        }
     }
 }
-
-
-

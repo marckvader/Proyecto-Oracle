@@ -1,12 +1,3 @@
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.dll.config
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.dll
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.pdb
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Oracle.ManagedDataAccess.dll
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.csprojAssemblyReference.cache
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.csproj.CoreCompileInputs.cache
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.csproj.CopyComplete
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.dll
-E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.pdb
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.dll.config
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.dll
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.pdb
@@ -16,3 +7,11 @@ C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreter
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.csproj.CopyComplete
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.dll
 C:\Users\USUARIO\Desktop\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.pdb
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.dll.config
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.dll
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Ferreteria.Entidades.pdb
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.csproj.CoreCompileInputs.cache
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.csproj.CopyComplete
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.dll
+E:\Proyecto BD II Cuatrimestre V2\Fuente\Proyecto\Ferreteria\Ferreteria.Entidades\obj\Debug\Ferreteria.Entidades.pdb

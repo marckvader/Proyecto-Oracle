@@ -18,7 +18,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("LISTAR_TBL_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
@@ -43,7 +43,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BUSCAR_TBL_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("CATEGOR", OracleDbType.Varchar2).Value = Valor;
@@ -68,7 +68,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 sqloraclecon.Open();
                 OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_CATEGORIA WHERE CATEGORIA = :Categoria", sqloraclecon);
                 Comando.Parameters.Add(":Categoria", Valor);
@@ -111,7 +111,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("INSERTAR_TBL_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDCAT", OracleDbType.Int16).Value = Obj.ID_Categoria;
@@ -137,7 +137,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACTUALIZAR_TBL_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDCAT", OracleDbType.Int16).Value = Obj.ID_Categoria;
@@ -163,7 +163,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BORRAR_TBL_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDCAT", OracleDbType.Int16).Value = Id;
@@ -186,7 +186,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACTIV_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDCAT", OracleDbType.Int16).Value = Id;
@@ -209,7 +209,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("DESACTIV_CATEGORIA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDCAT", OracleDbType.Int16).Value = Id;

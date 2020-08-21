@@ -18,7 +18,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("LISTAR_UNIDADES_MEDIDA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
@@ -43,7 +43,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BUSCAR_TBL_UND_MEDIDAS", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("MED", OracleDbType.Varchar2).Value = Valor;
@@ -69,7 +69,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 sqloraclecon.Open();
                 OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_UND_MED WHERE DESCRIPCION = :Descripcion", sqloraclecon);
                 Comando.Parameters.Add(":Descripcion", Valor);
@@ -99,7 +99,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("INSERTAR_TBL_UND_MED", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDMED", OracleDbType.Int16).Value = Obj.ID_Und_Medida;
@@ -124,7 +124,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACTUALIZAR_TBL_UND_MED", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDMED", OracleDbType.Int16).Value = Obj.ID_Und_Medida;
@@ -149,7 +149,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BORRAR_TBL_UND_MED", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("ID_MED", OracleDbType.Int16).Value = Id;

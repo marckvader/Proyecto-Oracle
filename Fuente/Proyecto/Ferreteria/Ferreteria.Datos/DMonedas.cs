@@ -19,7 +19,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("LISTAR_TBL_MONEDAS", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
@@ -44,7 +44,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BUSCAR_TBL_MONEDAS", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("MON", OracleDbType.Varchar2).Value = Valor;
@@ -70,7 +70,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 sqloraclecon.Open();
                 OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_MONEDAS WHERE COD_MONEDA = :Cod_Moneda", sqloraclecon);
                 Comando.Parameters.Add(":Descripcion", Valor);
@@ -113,7 +113,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("INSERTAR_TBL_MONEDAS", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDM", OracleDbType.Int16).Value = Obj.ID_Moneda;
@@ -138,7 +138,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACTUALIZAR_TBL_MONEDAS", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("IDM", OracleDbType.Int16).Value = Obj.ID_Moneda;
@@ -163,7 +163,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BORRAR_TBL_MONEDAS", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("ID_MON", OracleDbType.Int16).Value = Id;

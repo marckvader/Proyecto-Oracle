@@ -16,6 +16,11 @@ namespace Ferreteria.Negocio
             DEmpresa Datos = new DEmpresa();
             return Datos.Listar();
         }
+        public static DataTable ListarDetallado()
+        {
+            DEmpresa Datos = new DEmpresa();
+            return Datos.ListarDetallado();
+        }
         public static DataTable Buscar(string Valor)
         {
             DEmpresa Datos = new DEmpresa();
@@ -98,20 +103,20 @@ namespace Ferreteria.Negocio
                 }
             }
         }
-        public static string Eliminar(string numid)
+        public static string Eliminar(int IDci)
         {
             DEmpresa datos = new DEmpresa();
-            return datos.Eliminar(numid);
+            return datos.Eliminar(IDci);
         }
-        public static string Activar(string numid)
+        public static string Activar(int IDci)
         {
             DEmpresa datos = new DEmpresa();
-            return datos.Activar(numid);
+            return datos.Activar(IDci);
         }
-        public static string Desactivar(string numid)
+        public static string Desactivar(int IDci)
         {
             DEmpresa datos = new DEmpresa();
-            return datos.Desactivar(numid);
+            return datos.Desactivar(IDci);
         }
     }
 }

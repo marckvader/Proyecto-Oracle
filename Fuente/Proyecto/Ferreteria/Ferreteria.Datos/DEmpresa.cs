@@ -18,8 +18,33 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("LISTAR_TBL_EMPRESABASIC", sqloraclecon);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                sqloraclecon.Open();
+                Resultado = comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (sqloraclecon.State == ConnectionState.Open) sqloraclecon.Close();
+            }
+        }
+        public DataTable ListarDetallado()
+        {
+            OracleDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            OracleConnection sqloraclecon = new OracleConnection();
+            try
+            {
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
+                OracleCommand comando = new OracleCommand("LISTAR_TBL_EMPREDETALLADO", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
                 sqloraclecon.Open();
@@ -43,10 +68,10 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
-                OracleCommand comando = new OracleCommand("BUSCAR_TBL_CATEGORIA", sqloraclecon);
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
+                OracleCommand comando = new OracleCommand("BUSCAR_TBL_EMPRESA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("CATEGOR", OracleDbType.Varchar2).Value = Valor;
+                comando.Parameters.Add("RAZON", OracleDbType.Varchar2).Value = Valor;
                 comando.Parameters.Add("REGISTROS", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
                 sqloraclecon.Open();
                 Resultado = comando.ExecuteReader();
@@ -68,7 +93,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 sqloraclecon.Open();
                 OracleCommand Comando = new OracleCommand("SELECT * FROM TBL_EMPRESA WHERE NUM_ID = :NUMID", sqloraclecon);
                 Comando.Parameters.Add(":NUMID", Valor);
@@ -98,7 +123,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("INSERTAR_TBL_EMPRESA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("VAR1", OracleDbType.Int16).Value = Obj.ID_Cia;
@@ -134,7 +159,7 @@ namespace Ferreteria.Datos
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACTUALIZAR_TBL_EMPRESA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.CommandType = CommandType.StoredProcedure;
@@ -165,16 +190,16 @@ namespace Ferreteria.Datos
             }
             return Rpta;
         }
-        public string Eliminar(string numID)
+        public string Eliminar(int IDci)
         {
             string Rpta = "";
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("BORRAR_TBL_EMPRESA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("VAR15", OracleDbType.Varchar2).Value = numID;
+                comando.Parameters.Add("VAR15", OracleDbType.Varchar2).Value = IDci;
                 sqloraclecon.Open();
                 Rpta = comando.ExecuteNonQuery() == -1 ? "OK" : "NO SE PUDO ELIMINAR EL REGISTRO.";
             }
@@ -188,16 +213,17 @@ namespace Ferreteria.Datos
             }
             return Rpta;
         }
-        public string Activar(string numID)
+        public string Activar(int IDci)
         {
             string Rpta = "";
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("ACTIV_EMPRESA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("VAR15", OracleDbType.Varchar2).Value = numID;
+                comando.Parameters.Add("VAR1", OracleDbType.Int16).Value = IDci;
+                //comando.Parameters.Add("VAR15", OracleDbType.Varchar2).Value = IDci;
                 sqloraclecon.Open();
                 Rpta = comando.ExecuteNonQuery() == -1 ? "OK" : "NO SE PUDO ACTIVAR EL REGISTRO.";
             }
@@ -211,16 +237,17 @@ namespace Ferreteria.Datos
             }
             return Rpta;
         }
-        public string Desactivar(string numID)
+        public string Desactivar(int IDci)
         {
             string Rpta = "";
             OracleConnection sqloraclecon = new OracleConnection();
             try
             {
-                sqloraclecon = Conexion.getInstancia().CrearConexion();
+                sqloraclecon = Conexion.GetInstancia().CrearConexion();
                 OracleCommand comando = new OracleCommand("DESACTIV_EMPRESA", sqloraclecon);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("VAR15", OracleDbType.Varchar2).Value = numID;
+                comando.Parameters.Add("VAR1", OracleDbType.Int16).Value = IDci;
+                //comando.Parameters.Add("VAR15", OracleDbType.Varchar2).Value = IDci;
                 sqloraclecon.Open();
                 Rpta = comando.ExecuteNonQuery() == -1 ? "OK" : "NO SE PUDO DESACTIVAR EL REGISTRO.";
             }
